@@ -22,8 +22,8 @@ jobs:
         
         
     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-      - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-        run: sed -i 's/<base href="\/" \/>/<base href="\/gh-pages\/" \/>/g' release/wwwroot/index.html
+      #- name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
+       # run: sed -i 's/<base href="\/" \/>/<base href="\/gh-pages\/" \/>/g' release/wwwroot/index.html
         
       - name: Add .nojekyll file
         run: touch release/wwwroot/.nojekyll
